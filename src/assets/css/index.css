@@ -1,3 +1,44 @@
-p {
-  background: #56c7ba;
+:root {
+  --bs-emphasis-color-rgb: white;
+  --bs-navbar-nav-link-margin-x: 0.9rem;
+  --bs-tier-color: #56c7ba;
+  --bs-navbar-height: 6rem;
+}
+
+.navbar {
+  --bs-navbar-brand-font-size: 0rem;
+  --bs-navbar-nav-link-padding-y: 0.8rem;
+  --bs-navbar-nav-link-padding-x: 0rem;
+  --bs-navbar-padding-y: 0rem;
+  /* height: var(--bs-navbar-height); */
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(86, 199, 186)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.nav-link {
+  --bs-nav-link-font-size: 1.3rem;
+  margin: 0px var(--bs-navbar-nav-link-margin-x);
+}
+
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+
+/* collapse able area */
+.show {
+  padding-bottom: 1.4rem;
+}
+.show ul li a {
+  border-bottom: 3px solid var(--bs-tier-color);
+}
+.brand-logo {
+  width: 2.5rem;
+  height: 3.8rem;
+}
+
+.nav-link {
+  padding: 1rem 3px;
+  border-bottom: 6px solid var(--bs-dark-rgb);
+}
+.nav-link:hover {
+  /* padding: 1rem 3px; */
+  border-bottom: 6px solid var(--bs-tier-color);
 }

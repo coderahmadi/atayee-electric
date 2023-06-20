@@ -1,9 +1,10 @@
-function Header() {
+const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-secondary">
-      <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg bg-dark text-light">
+      <div className="container">
         <a className="navbar-brand" href="#">
-        <p>Atayee</p>  Electric
+          {/* Atayee's  Electric */}
+          <img src="/energy-icon.svg" className="brand-logo" alt="Brand-Logo" />
         </a>
         <button
           className="navbar-toggler"
@@ -30,16 +31,32 @@ function Header() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Mission
+                Services
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Contact</a>
+              <a className="nav-link" href="#">
+                Contact
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Portfolio
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+  );
+};
+
+function Header() {
+  return (
+    <div>
+      <Navbar />
+      
+    </div>
   );
 }
 

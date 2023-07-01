@@ -20,30 +20,30 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              <a className="nav-link" aria-current="page" href="#home">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#about">
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#services">
                 Services
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#contact">
                 Contact
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" href="#">
                 Portfolio
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
@@ -51,12 +51,13 @@ const Navbar = () => {
   );
 };
 
+
 function Header() {
   return (
-    <div>
+    <header>
       <Navbar />
       
-    </div>
+    </header>
   );
 }
 

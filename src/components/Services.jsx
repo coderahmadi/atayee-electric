@@ -1,6 +1,6 @@
-import s1 from "../images/service1.jpg";
-import s2 from "../images/service2.jpg";
-import s3 from "../images/service3.jpg";
+import s1 from "../assets/images/service1.jpg";
+import s2 from "../assets/images/service2.jpg";
+import s3 from "../assets/images/service3.jpg";
 const services = [
   {
     id:1,
@@ -50,34 +50,12 @@ const showServices = services.map((service) => {
 
 
 
-const Home = () => {
-  return <div id="home">Home</div>;
-};
-const About = () => {
-  return <div id="about">About</div>;
-};
 const Services = () => {
   return (
     <div id="services" className="row">
       {showServices}
     </div>
-  );
-};
-const Contact = () => {
-  return <div id="contact">Contact</div>;
-};
-
-function Main() {
-  return (
-    <main>
-      <div className="container">
-        <Home />
-        <About />
-        <Services />
-        <Contact />
-      </div>
-    </main>
-  );
+  )
 }
 
-export default Main;
+export default Services

@@ -8,7 +8,7 @@ const FooterContainer = () => {
 
 function Footer() {
   return (
-    <footer className="bg-dark text-light" >
+    <footer className="text-light">
       <FooterContainer />
     </footer>
   );

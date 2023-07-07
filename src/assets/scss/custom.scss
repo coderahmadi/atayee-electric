@@ -16,28 +16,25 @@ $breadcrumb-divider: quote(">");
     header {
         .navbar {
             --bs-navbar-brand-font-size: 0rem;
-            --bs-navbar-nav-link-padding-y: 0.8rem;
+            --bs-navbar-nav-link-padding-y: 0.6rem;
             --bs-navbar-nav-link-padding-x: 1rem;
             --bs-navbar-padding-y: 0rem;
             background-color: $bs-dark-rgb;
-            
-
             --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255,255,255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='1' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 
             .container {
-                .navbar-brand {
-                    .brand-logo {
-                        margin-left: 0.3rem;
-                        width: 2rem;
-                        height: 3rem;
-                    }
+                span#icon {
+                    font-size: 1.4rem;
                 }
+
                 .navbar-toggler,
                 .navbar-toggler:focus,
                 .navbar-toggler:active,
                 .navbar-toggler-icon:focus {
-                    outline: 1px solid $bs-emphasis-color-rgb;
-                    border: 1px solid $bs-emphasis-color-rgb;
+                    // outline: 1px solid $bs-emphasis-color-rgb;
+                    // border: 1px solid $bs-emphasis-color-rgb;
+                    border: none;
+                    outline: none;
                     box-shadow: none;
                 }
                 .navbar-collapse {
@@ -45,7 +42,7 @@ $breadcrumb-divider: quote(">");
                     ul.navbar-nav {
                         li.nav-item {
                             .nav-link {
-                                --bs-nav-link-font-size: 1.5rem;
+                                --bs-nav-link-font-size: 1.3rem;
                                 padding: var(--bs-navbar-nav-link-padding-y) var(--bs-navbar-nav-link-padding-x);
                                 margin: 0px $bs-navbar-nav-link-margin-x;
                                 color: $bs-emphasis-color-rgb;
@@ -88,6 +85,6 @@ $breadcrumb-divider: quote(">");
         transition: 1.4s ease-in-out;
     }
     .show ul li a {
-        border-bottom: 1px solid $bs-emphasis-color-rgb;
+        border-bottom: 1px $bs-emphasis-color-rgb;
     }
 }

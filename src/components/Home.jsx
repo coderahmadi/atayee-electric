@@ -1,5 +1,7 @@
+import Heading from "./subComponents/ComponentHeading";
+
 import { useTranslation } from "react-i18next";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 const Home = () => {
   const { t, i18n } = useTranslation();
@@ -9,6 +11,7 @@ const Home = () => {
   }
   return (
     <div id="home">
+      <Heading>Home</Heading>
       <div
         className="btn-group"
         role="group"

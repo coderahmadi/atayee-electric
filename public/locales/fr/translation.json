@@ -1,4 +1,10 @@
 {
+  "title-home": "Maison",
+  "title-about": "à propos",
+  "title-services": "Services",
+  "title-contact": "Contact",
+  "title-faq": "FAQ",
+  "brand-text": "L'électrique d'Atayee",
   "title": "Bienvenue à réagir en utilisant react-i18next",
   "description": {
     "part1": "Pour commencer, modifiez <1>src/App.js</1> et enregistrez pour recharger",

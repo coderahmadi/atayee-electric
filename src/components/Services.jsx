@@ -1,19 +1,21 @@
+import Heading from "./subComponents/ComponentHeading";
+
 import s1 from "../assets/images/service1.jpg";
 import s2 from "../assets/images/service2.jpg";
 import s3 from "../assets/images/service3.jpg";
 const services = [
   {
-    id:1,
+    id: 1,
     pic: s1,
     textValue: "All brands of Electric Scooters",
   },
   {
-    id:2,
+    id: 2,
     pic: s2,
     textValue: "Lithium batteries",
   },
   {
-    id:3,
+    id: 3,
     pic: s3,
     textValue: "Electronic components",
   },
@@ -39,23 +41,20 @@ const showServices = services.map((service) => {
           alt="Service Image"
         />
         <div className="card-body">
-          <h3 className="card-title text-center">
-            {service.textValue}
-          </h3>
+          <h3 className="card-title text-center">{service.textValue}</h3>
         </div>
       </div>
     </div>
   );
 });
 
-
-
 const Services = () => {
   return (
     <div id="services" className="row">
+      <Heading>Services</Heading>
       {showServices}
     </div>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

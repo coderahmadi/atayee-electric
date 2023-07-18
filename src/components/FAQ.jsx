@@ -1,6 +1,9 @@
+import Heading from "./subComponents/ComponentHeading";
+
 const Faq = () => {
   return (
-    <div>
+    <div id="faq">
+      <Heading>Frequently Asked Question (FAQ)</Heading>
       <div className="accordion" id="accordionExample">
         <div className="accordion-item">
           <h2 className="accordion-header">

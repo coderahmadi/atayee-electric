@@ -1,4 +1,10 @@
 {
+  "title-home":"Home",
+  "title-about":"About",
+  "title-services":"Services",
+  "title-contact":"Contact",
+  "title-faq":"FAQ",
+  "brand-text":"Atayee's Electric",
   "title": "Welcome to react using react-i18next",
   "description": {
     "part1": "To get started, edit <1>src/App.js</1> and save to reload.",

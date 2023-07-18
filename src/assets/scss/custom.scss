@@ -36,15 +36,18 @@ $breadcrumb-divider: quote(">");
                     border: none;
                     outline: none;
                     box-shadow: none;
+                    color: $bs-emphasis-color-rgb;
                 }
                 .navbar-collapse {
                     flex-grow: 0 !important;
+                    gap: 4rem;
                     ul.navbar-nav {
                         li.nav-item {
                             .nav-link {
                                 --bs-nav-link-font-size: 1.3rem;
                                 padding: var(--bs-navbar-nav-link-padding-y) var(--bs-navbar-nav-link-padding-x);
-                                margin: 0px $bs-navbar-nav-link-margin-x;
+                                // margin: 0px $bs-navbar-nav-link-margin-x; with horizontal margin
+                                margin: 0px 0px;
                                 color: $bs-emphasis-color-rgb;
                                 &:hover {
                                     transition: 0.8s ease-in-out;
@@ -59,20 +62,71 @@ $breadcrumb-divider: quote(">");
         }
     }
     main {
-        margin-top: 3.7rem;
+        margin-top: 3rem;
         padding: 0.6rem 0.1rem;
         min-height: calc(100vh - 12rem - 4rem);
     }
 
     footer {
-        height: 12rem;
         background-color: $bs-dark-rgb;
+        // LinkToTop component
+        a#link-top-top {
+            background-color: $bs-royal-blue;
+            color: white;
+            padding: 0.6rem;
+            width: 100%;
+
+            &:hover {
+                color: $bs-peach-color;
+                opacity: 0.7;
+                outline: 1px $bs-peach-color;
+            }
+        }
+        div.container {
+            // FooterMenuAccess
+            section#title {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid $bs-gray-color;
+                h3 {
+                }
+                span {
+                }
+
+                div.changLang {
+                    display: flex;
+                    gap: 1rem;
+                    align-items: center;
+                    background-color: $bs-royal-blue;
+                    // border:1px solid $bs-gray-color;
+                    padding: 0rem 1rem;
+                }
+            }
+            // FooterTermsAndPolicies
+            section {
+                div {
+                    div {
+                        .rules-link {
+                            color: $bs-emphasis-color-rgb;
+                            text-decoration: none;
+                            &:hover {
+                                color: $bs-peach-color;
+                                border-bottom: 1px solid $bs-peach-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
 @media (max-width: $layout-breakpoint-medium) {
     .navbar-expand-lg .navbar-collapse {
         transition: 1s ease-in;
+    }
+    .navbar-nav {
+        padding-bottom: 4rem;
     }
     .nav-link {
         --bs-nav-link-font-size: 1.5rem;

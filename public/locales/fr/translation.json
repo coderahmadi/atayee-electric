@@ -9,5 +9,10 @@
   "description": {
     "part1": "Pour commencer, modifiez <1>src/App.js</1> et enregistrez pour recharger",
     "part2": "Changez de langue entre l'anglais et l'allemand à l'aide des boutons ci-dessus."
-  }
+  },
+  "about-title": "Bonjour, je m'appelle Hamed Atayee!",
+  "about-description": "Je suis un passionne de l'électronique. Ayant 20 années d'expérience dans la fabrication et l'installation de panneaux photovoltaïques, je me suis lancé dans la réparation de trottinette ainsi que les batteries Lithium. J'aime l'innovation et la technologie. Rigoureux et très méticuleux, je serai ravi de pouvoir donner un second souffle à votre appareil.",
+  "imprint": "imprimer",
+  "data-protection": "protection des données",
+  "terms-and-condition": "termes et conditions"
 }

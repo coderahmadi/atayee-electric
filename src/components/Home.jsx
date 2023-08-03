@@ -11,7 +11,7 @@ const Home = () => {
   }
   return (
     <div id="home">
-      <Heading>Home</Heading>
+      <Heading>{t("title-home")}</Heading>
       <div
         className="btn-group"
         role="group"

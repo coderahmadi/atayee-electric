@@ -1,5 +1,5 @@
 import Heading from "./subComponents/ComponentHeading";
-
+import { useTranslation } from "react-i18next";
 import s1 from "../assets/images/service1.jpg";
 import s2 from "../assets/images/service2.jpg";
 import s3 from "../assets/images/service3.jpg";
@@ -49,9 +49,10 @@ const showServices = services.map((service) => {
 });
 
 const Services = () => {
+  const { t } = useTranslation();
   return (
     <div id="services" className="row">
-      <Heading>Services</Heading>
+      <Heading>{t("title-services")}</Heading>
       {showServices}
     </div>
   );

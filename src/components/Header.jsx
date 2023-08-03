@@ -84,7 +84,7 @@ const Navbar = () => {
                 <span>&nbsp;{t("title-contact")}</span>
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink
                 style={({ isActive }) =>
                   isActive ? { backgroundColor: "#eea47f" } : undefined
@@ -95,9 +95,9 @@ const Navbar = () => {
                 <FontAwesomeIcon icon={faComments} size="xs" />
                 <span>&nbsp;{t("title-faq")}</span>
               </NavLink>
-            </li>
+            </li> */}
           </ul>
-          <select
+          <select id="changeLangNav"
             className="form-select form-select-md"
             style={{ width: "auto" }}
             aria-label="Default select example"

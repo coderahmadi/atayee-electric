@@ -1,13 +1,18 @@
 {
-  "title-home":"Home",
-  "title-about":"About",
-  "title-services":"Services",
-  "title-contact":"Contact",
-  "title-faq":"FAQ",
-  "brand-text":"Atayee's Electric",
+  "title-home": "Home",
+  "title-about": "About",
+  "title-services": "Services",
+  "title-contact": "Contact",
+  "title-faq": "FAQ",
+  "brand-text": "Atayee's Electric",
   "title": "Welcome to react using react-i18next",
   "description": {
     "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
     "part2": "Switch language between english and german using buttons above."
-  }
+  },
+  "about-title": "Hello, my name is Hamed Atayee!",
+  "about-description": "I am an electronics enthusiast. Having 20 years of experience in the manufacture and installation of photovoltaic panels, I started repairing scooters and lithium batteries. I love innovation and technology. Rigorous and very meticulous, I will be delighted to be able to breathe new life into your device.",
+  "imprint": "imprint",
+  "data-protection": "data protection",
+  "terms-and-condition": "terms and condition"
 }

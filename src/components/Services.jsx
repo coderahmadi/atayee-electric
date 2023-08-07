@@ -53,7 +53,8 @@ const Services = () => {
   return (
     <div id="services" className="row">
       <Heading>{t("title-services")}</Heading>
-      {showServices}
+      {/* {showServices} */}
+      
     </div>
   );
 };

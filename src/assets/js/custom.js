@@ -1,7 +1,5 @@
+// document.addEventListener("click", (e) => {
+//   const navbarNav = document.getElementById("navbarNav");
 
-
-// document.addEventListener('click', (e) => {
-//     const navbarNav = document.getElementById('navbarNav');
-
-//     navbarNav.classList.toggle('show')
-// })
+//   navbarNav.classList.toggle("show");
+// });

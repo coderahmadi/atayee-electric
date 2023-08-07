@@ -9,7 +9,6 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 import { faAnglesUp } from "@fortawesome/free-solid-svg-icons";
-import frImgFlag from "../assets/images/svg/flags/fr.svg";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 const LinkToTop = () => {
@@ -22,23 +21,14 @@ const LinkToTop = () => {
 
 const FooterTitleSetting = () => {
   const { t, i18n } = useTranslation();
-  const links = {
-    textDecoration: "none",
-    color: "white",
-    fontSize: "1.3rem",
-    padding: "0.1rem 0.7rem",
-  };
   // console.log("t=", i18n.resolvedLanguage);
-  // function handleClick(lang) {
-  //   i18n.changeLanguage(lang);
-  // }
+  function handleChange(e) {
+    i18n.changeLanguage(e.target.value);
+  }
   return (
     <section id="title" className="mt-3 mb-3 pt-4 pb-4">
       <h3>{t("brand-text")}</h3>
-      <address
-        style={links}
-        className="d-flex justify-content-start align-items-center"
-      >
+      <address className="d-flex justify-content-start align-items-center">
         <FaMapMarkerAlt />
         <span>&nbsp;Lyon - France</span>
         {/* <img
@@ -55,6 +45,9 @@ const FooterTitleSetting = () => {
             type="radio"
             name="flexRadioDefault"
             id="flexRadioDefault1"
+            value="en"
+            onChange={handleChange}
+            checked={i18n.resolvedLanguage === "en" ? "checked" : ""}
           />
           <label className="form-check-label" htmlFor="flexRadioDefault1">
             English
@@ -65,7 +58,10 @@ const FooterTitleSetting = () => {
             className="form-check-input"
             type="radio"
             name="flexRadioDefault"
+            value="fr"
             id="flexRadioDefault2"
+            onChange={handleChange}
+            checked={i18n.resolvedLanguage === "fr" ? "checked" : ""}
           />
           <label className="form-check-label" htmlFor="flexRadioDefault2">
             French
@@ -79,7 +75,7 @@ const FooterMenuAccess = () => {
   const { t } = useTranslation();
   return (
     <section id="footer-menu" className="row mt-2 mb-2 pt-4 pb-4">
-      <div className="col-md-6">
+      <div className="col-md-3 fma">
         <NavLink to="/" className="footer-nav">
           <FaArrowCircleRight />
           &nbsp; {t("title-home")}
@@ -100,7 +96,7 @@ const FooterMenuAccess = () => {
           &nbsp; {t("title-contact")}
         </NavLink>
       </div>
-      <div className="col-md-6">
+      <div className="col-md-5 fma">
         <a href="tel:+33753937431" className="links">
           <FaPhoneSquareAlt />
           <span> &nbsp;+33 7 53 93 74 31</span>
@@ -111,7 +107,7 @@ const FooterMenuAccess = () => {
         </a>
 
         <a
-          href="http://"
+          href="https://www.facebook.com/profile.php?id=100093047394271"
           target="_blank"
           rel="noreferrer"
           className="socialMedia"
@@ -129,13 +125,22 @@ const FooterMenuAccess = () => {
         </a>
 
         <a
-          href="http://"
+          href="https://www.tiktok.com/@hussainhamid02?_t=8eb4Ilb5CLI&_r=1"
           target="_blank"
           rel="noreferrer"
           className="socialMedia"
         >
           <FaTiktok />
         </a>
+      </div>
+      <div className="col-md-4 fma">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22278.790331798307!2d4.849294924720369!3d45.734127153802895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c1e2d5b30b85%3A0x1c08ab2e41e47c80!2s69008%20Lyon%2C%20France!5e0!3m2!1sen!2sde!4v1690854052918!5m2!1sen!2sde"
+          style={{ border: "0", width: "100%", height: "100%" }}
+          allowfullscreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
   );
@@ -148,13 +153,16 @@ const FooterTermsAndPolicies = () => {
       <div className="rules text-light d-flex flex-wrap gap-3 fs-5">
         <a href="#" className="rules-link">
           {t("terms-and-condition")}
-        </a>{" "}
+        </a>
         <a href="#" className="rules-link">
           {t("data-protection")}
         </a>
         <a href="#" className="rules-link">
           {t("imprint")}
         </a>
+      </div>
+      <div className="p-3" id="devep">
+        <p className="fs-5">&nbsp;designed and developed by ~ <span>Ahmadi</span> </p>
       </div>
     </section>
   );

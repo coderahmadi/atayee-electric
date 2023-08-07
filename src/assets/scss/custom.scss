@@ -68,16 +68,69 @@ $breadcrumb-divider: quote(">");
     margin-top: 3rem;
     padding: 0.6rem 0.1rem;
     min-height: calc(100vh - 16rem - 4rem);
+    div.container {
+      #home {
+        .row {
+          .lside {
+            #sliderE {
+              .carousel-control-prev {
+                .carousel-control-prev-icon {
+                  width: 4rem !important;
+                  height: 4rem !important;
+                }
+              }
+              .carousel-control-next {
+                .carousel-control-next-icon {
+                  width: 4rem !important;
+                  height: 4rem !important;
+                }
+              }
+            }
+          }
+          .rside {
+            .rounded {
+              background-color: #f2f4f5 !important;
+              box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+              width: 100%;
+              &:hover {
+                cursor: pointer;
+                background-color: white !important;
+                transition: 0.9s ease-in;
+                box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+              }
+              a {
+                display: flex !important;
+                align-items: center !important;
+                width: 100% !important;
+                height: 100% !important;
+                text-decoration: none;
+                color: $bs-dark-rgb;
+                &:hover {
+                  color: purple;
+                  margin-left: 1rem;
+                  transition: 0.9s ease-in;
+                }
+                span.linkText {
+                  text-transform: lowercase;
+                  font-size: 1.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   footer {
     background-color: $bs-dark-rgb;
+    color: $bs-gray-color;
     height: auto;
     box-sizing: border-box !important;
     // LinkToTop component
     a#link-top-top {
       background-color: $bs-royal-blue;
-      color: white;
+      color: $bs-gray-color;
       padding: 0.6rem;
       width: 100%;
 
@@ -99,16 +152,26 @@ $breadcrumb-divider: quote(">");
           font-size: 2.3rem;
           font-family: "Pacifico", cursive;
         }
-        span {
+        address {
+          text-decoration: none;
+          color: $bs-gray-color;
+          font-size: 1.3rem;
+          padding: 0.1rem 0.7rem;
         }
 
         div.changLang {
           display: flex;
           gap: 1rem;
+          color: $bs-gray-color;
           align-items: center;
           background-color: $bs-royal-blue;
-          // border:1px solid $bs-gray-color;
           padding: 0rem 1rem;
+          span.form-check input.form-check-input {
+            cursor: pointer;
+          }
+          span.form-check label.form-check-label {
+            cursor: pointer;
+          }
         }
       }
       // FooterMenuAccess
@@ -150,9 +213,19 @@ $breadcrumb-divider: quote(">");
       // FooterTermsAndPolicies
       section.terms-policies {
         margin: 1rem 0rem 2rem 0rem;
+        display: flex !important;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        #devep {
+          p {
+            span {
+              font-family: "Borel", cursive;
+            }
+          }
+        }
       }
       section div a.rules-link {
-        color: $bs-emphasis-color-rgb;
+        color: $bs-gray-color;
         text-decoration: none;
         &:hover {
           color: $bs-peach-color;
@@ -185,7 +258,13 @@ $breadcrumb-divider: quote(">");
     transition: 1.4s ease-in-out;
   }
   .show ul li a {
-    border-bottom: 1px $bs-emphasis-color-rgb;
+    // border-bottom: 1px $bs-emphasis-color-rgb;
+  }
+  .fma {
+    margin-bottom: 2rem;
+  }
+  .rside {
+    margin-top: 2rem !important;
   }
 }
 
@@ -193,4 +272,10 @@ $breadcrumb-divider: quote(">");
   font-family: "Roboto", sans-serif;
   font-style: oblique;
   font-weight: 300;
+}
+
+#back-btn {
+  &:hover {
+    color: "darkgray" !important;
+  }
 }

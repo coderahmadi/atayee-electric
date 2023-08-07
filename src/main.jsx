@@ -1,8 +1,10 @@
 // importing bootstrap into project
 import "bootstrap/dist/css/bootstrap.min.css";
+// import "popper.js";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "jquery";
-import "popper.js";
+
+import "./assets/js/custom.js";
 
 import React from "react";
 import ReactDOM from "react-dom/client";

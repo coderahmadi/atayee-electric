@@ -1,20 +1,21 @@
-import styled from "styled-components";
-
-const Heading = styled.h3`
-  position: relative;
-  padding: 0.8rem 0rem 0.5rem;
-  color: darkgray;
-  text-align: center;
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: -60;
-    width: 50px;
-    height: 5px;
-    background-color: #00539c;
-    border-radius: 18px;
-  }
-`;
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
+import CompHeading from "./CompHeading";
+const Heading = ({ children }) => {
+  return (
+    <div className="d-flex justify-content-between align-items-center">
+      <NavLink id="back-btn"
+        to="/"
+        style={{ color: "#00539c", fontSize: "1.5rem", fontWeight: "bolder" }}
+      >
+        <FaArrowLeftLong />
+      </NavLink>
+      <span>
+        <CompHeading>{children}</CompHeading>
+      </span>
+      <span></span>
+    </div>
+  );
+};
 
 export default Heading;

@@ -13,7 +13,13 @@ const Navbar = () => {
   const handleChange = (e) => {
     const lang = e.target.value;
     i18n.changeLanguage(lang);
+    toggleMenu();
   };
+  const toggleMenu = () => {
+    const ele = document.querySelector("#navbarNav");
+    ele.classList.toggle("show");
+  };
+
   return (
     <nav className="navbar fixed-top navbar-expand-lg" id="navbar">
       <div className="container">
@@ -39,6 +45,7 @@ const Navbar = () => {
                 style={({ isActive }) =>
                   isActive ? { backgroundColor: "#eea47f" } : undefined
                 }
+                onClick={toggleMenu}
                 className="nav-link"
                 aria-current="page"
                 to="/"
@@ -52,6 +59,7 @@ const Navbar = () => {
                 style={({ isActive }) =>
                   isActive ? { backgroundColor: "#eea47f" } : undefined
                 }
+                onClick={toggleMenu}
                 className="nav-link"
                 to="/about"
               >
@@ -64,6 +72,7 @@ const Navbar = () => {
                 style={({ isActive }) =>
                   isActive ? { backgroundColor: "#eea47f" } : undefined
                 }
+                onClick={toggleMenu}
                 className="nav-link"
                 to="/services"
               >
@@ -77,6 +86,7 @@ const Navbar = () => {
                 style={({ isActive }) =>
                   isActive ? { backgroundColor: "#eea47f" } : undefined
                 }
+                onClick={toggleMenu}
                 className="nav-link"
                 to="/contact"
               >
@@ -97,7 +107,8 @@ const Navbar = () => {
               </NavLink>
             </li> */}
           </ul>
-          <select id="changeLangNav"
+          <select
+            id="changeLangNav"
             className="form-select form-select-md"
             style={{ width: "auto" }}
             aria-label="Default select example"

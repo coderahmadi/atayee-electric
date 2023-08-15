@@ -1,0 +1,32 @@
+{
+  "title-home": "Maison",
+  "title-about": "à propos",
+  "title-services": "Services",
+  "title-contact": "Contact",
+  "title-faq": "FAQ",
+  "brand-text": "L'électrique d'Atayee",
+  "title": "Bienvenue à réagir en utilisant react-i18next",
+  "description": {
+    "part1": "Pour commencer, modifiez <1>src/App.js</1> et enregistrez pour recharger",
+    "part2": "Changez de langue entre l'anglais et l'allemand à l'aide des boutons ci-dessus."
+  },
+  "about-title": "Bonjour, bienvenue sur mon site!",
+  "regard": "cordialement",
+  "about-description": "Je suis un passionne de l'électronique. Ayant 20 années d'expérience dans la fabrication et l'installation de panneaux photovoltaïques, je me suis lancé dans la réparation de trottinette ainsi que les batteries Lithium. J'aime l'innovation et la technologie. Rigoureux et très méticuleux, je serai ravi de pouvoir donner un second souffle à votre appareil.",
+  "contact-form-name-title": "Nom Prénom",
+  "contact-form-email-title": "Votre adresse e-mail",
+  "contact-form-email-note": "Nous ne partagerons jamais votre e-mail avec des tiers !",
+  "contact-form-message-title": "Votre message",
+  "contact-form-submit-btn": "Soumettre",
+  "contact-phone-title": "Contactez-nous",
+  "contact-email-title": "Envoyez-moi un email",
+  "contact-social-media": "Réseaux sociaux",
+  "contact-map-title": "Retrouvez-nous au",
+  "service-title-page": "Nous fournissons des services de réparation pour les articles suivants",
+  "service-cart-text1": "Toutes marques de Trottinettes Électriques",
+  "service-cart-text2": "Les batteries Lithium",
+  "service-cart-text3": "Composants Électroniques",
+  "imprint": "imprimer",
+  "data-protection": "protection des données",
+  "terms-and-condition": "termes et conditions"
+}

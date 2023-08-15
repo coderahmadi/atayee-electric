@@ -1,0 +1,32 @@
+{
+  "title-home": "Home",
+  "title-about": "About",
+  "title-services": "Services",
+  "title-contact": "Contact",
+  "title-faq": "FAQ",
+  "brand-text": "Atayee's Electric",
+  "title": "Welcome to react using react-i18next",
+  "description": {
+    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
+    "part2": "Switch language between english and german using buttons above."
+  },
+  "about-title": "Hello, welcome to my website!",
+  "regard": "best regards",
+  "about-description": "I am an electronics enthusiast. Having 20 years of experience in the manufacture and installation of photovoltaic panels, I started repairing scooters and lithium batteries. I love innovation and technology. Rigorous and very meticulous, I will be delighted to be able to breathe new life into your device.",
+  "contact-form-name-title": "Name, First Name",
+  "contact-form-email-title": "Your Email Address",
+  "contact-form-email-note": "We will never share your email with third parties!",
+  "contact-form-message-title": "Your Message",
+  "contact-form-submit-btn": "Submit",
+  "contact-phone-title": "Reach out us",
+  "contact-email-title": "Email me",
+  "contact-social-media": "Social Media",
+  "contact-map-title": "Meet us at",
+  "service-title-page": "We are providing reparation services for the following items",
+  "service-cart-text1": "All brands of Electric Scooters",
+  "service-cart-text2": "Lithium batteries",
+  "service-cart-text3": "Electronic components",
+  "imprint": "imprint",
+  "data-protection": "data protection",
+  "terms-and-condition": "terms and condition"
+}

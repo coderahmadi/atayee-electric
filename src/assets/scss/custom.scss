@@ -119,6 +119,21 @@ $breadcrumb-divider: quote(">");
           }
         }
       }
+      #services {
+        #service-content {
+          #services-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            .service-item {
+              width: 19rem;
+              height: 19rem;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -204,10 +219,10 @@ $breadcrumb-divider: quote(">");
       }
       section div .socialMedia {
         color: $bs-gray-color;
-        font-size: 1.3rem;
-        margin-right: 0.6rem;
+        font-size: 1.4rem;
         &:hover {
           color: $bs-peach-color;
+          font-size: 1.5rem;
         }
       }
       // FooterTermsAndPolicies
@@ -265,6 +280,9 @@ $breadcrumb-divider: quote(">");
   }
   .rside {
     margin-top: 2rem !important;
+  }
+  #services-items {
+    gap: 4rem !important;
   }
 }
 

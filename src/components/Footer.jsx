@@ -3,7 +3,6 @@ import {
   FaPhoneSquareAlt,
   FaRegEnvelope,
   FaFacebook,
-  FaInstagram,
   FaTiktok,
   FaArrowCircleRight,
   FaMapMarkerAlt,
@@ -106,32 +105,25 @@ const FooterMenuAccess = () => {
           <span>&nbsp;thunderrepairs69@gmail.com</span>
         </a>
 
-        <a
-          href="https://www.facebook.com/profile.php?id=100093047394271"
-          target="_blank"
-          rel="noreferrer"
-          className="socialMedia"
-        >
-          <FaFacebook />
-        </a>
-
-        <a
-          href="http://"
-          target="_blank"
-          rel="noreferrer"
-          className="socialMedia"
-        >
-          <FaInstagram />
-        </a>
-
-        <a
-          href="https://www.tiktok.com/@hussainhamid02?_t=8eb4Ilb5CLI&_r=1"
-          target="_blank"
-          rel="noreferrer"
-          className="socialMedia"
-        >
-          <FaTiktok />
-        </a>
+        <span className="hstack gap-3">
+          <a
+            href="https://www.facebook.com/profile.php?id=100093047394271"
+            target="_blank"
+            rel="noreferrer"
+            className="socialMedia"
+          >
+            <FaFacebook />
+          </a>
+          <span className="vr"></span>
+          <a
+            href="https://www.tiktok.com/@hussainhamid02?_t=8eb4Ilb5CLI&_r=1"
+            target="_blank"
+            rel="noreferrer"
+            className="socialMedia"
+          >
+            <FaTiktok />
+          </a>
+        </span>
       </div>
       <div className="col-md-4 fma">
         <iframe
@@ -162,7 +154,9 @@ const FooterTermsAndPolicies = () => {
         </a>
       </div>
       <div className="p-3" id="devep">
-        <p className="fs-5">&nbsp;designed and developed by ~ <span>Ahmadi</span> </p>
+        <p className="fs-5">
+          &nbsp;designed and developed by ~ <span>Ahmadi</span>{" "}
+        </p>
       </div>
     </section>
   );

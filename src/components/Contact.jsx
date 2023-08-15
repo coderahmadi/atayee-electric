@@ -118,11 +118,11 @@ const Contact = () => {
                 }}
               ></span>
 
-              <a href="http://">
+              {/* <a href="http://">
                 <FaInstagram style={socialMedia} />
-              </a>
+              </a> */}
 
-              <span
+              {/* <span
                 className="vr"
                 style={{
                   height: "20px",
@@ -130,7 +130,7 @@ const Contact = () => {
                   marginLeft: "0.2rem",
                   marginRight: "0.2rem",
                 }}
-              ></span>
+              ></span> */}
               <span>
                 <a
                   target="_blank"

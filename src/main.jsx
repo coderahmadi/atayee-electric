@@ -2,7 +2,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 // import "popper.js";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import "jquery";
 
 import React from "react";
 import ReactDOM from "react-dom/client";

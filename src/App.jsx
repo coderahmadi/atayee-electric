@@ -14,12 +14,12 @@ import {
 import NotFound from "./components/NotFound";
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Template />}>
+    <Route path="/atayee-electric/" element={<Template />}>
       <Route index element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/services" element={<Services />} />
-      <Route path="/faq" element={<FAQ />} />
+      <Route path="/atayee-electric/about" element={<About />} />
+      <Route path="/atayee-electric/contact" element={<Contact />} />
+      <Route path="/atayee-electric/services" element={<Services />} />
+      <Route path="/atayee-electric/faq" element={<FAQ />} />
       <Route path="*" element={<NotFound />} />
     </Route>
   )

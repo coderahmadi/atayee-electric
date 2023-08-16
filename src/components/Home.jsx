@@ -35,7 +35,7 @@ const Home = () => {
               <div className="carousel-item active">
                 <img
                   style={sliderImgStyle}
-                  src={sliderImg1}
+                  src={sliderImg3}
                   className="d-block w-100"
                   alt="slider image one"
                 />
@@ -51,7 +51,7 @@ const Home = () => {
               <div className="carousel-item">
                 <img
                   style={sliderImgStyle}
-                  src={sliderImg3}
+                  src={sliderImg1}
                   className="d-block w-100"
                   alt="slider image one"
                 />

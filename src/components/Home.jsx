@@ -91,19 +91,19 @@ const Home = () => {
             </h2>
           </div> */}
           <div className="p-2 mb-4 rounded">
-            <NavLink to="/about" className="fs-5 ps-2">
+            <NavLink to="/atayee-electric/about" className="fs-5 ps-2">
               <FontAwesomeIcon icon={faAnglesRight} fixedWidth size="sm" />
               <span className="linkText">&nbsp;{t("title-about")}</span>
             </NavLink>
           </div>
           <div className="p-2 mb-4 rounded">
-            <NavLink to="/services" className="fs-5 ps-2">
+            <NavLink to="/atayee-electric/services" className="fs-5 ps-2">
               <FontAwesomeIcon icon={faAnglesRight} fixedWidth size="sm" />
               <span className="linkText">&nbsp;{t("title-services")}</span>
             </NavLink>
           </div>
           <div className="p-2 mb-4 rounded">
-            <NavLink to="/contact" className="fs-5 ps-2">
+            <NavLink to="/atayee-electric/contact" className="fs-5 ps-2">
               <FontAwesomeIcon icon={faAnglesRight} fixedWidth size="sm" />
               <span className="linkText">&nbsp;{t("title-contact")}</span>
             </NavLink>

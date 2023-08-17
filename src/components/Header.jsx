@@ -48,7 +48,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
                 className="nav-link"
                 aria-current="page"
-                to="/"
+                to="/atayee-electric/"
               >
                 <FontAwesomeIcon icon={faHome} size="xs" />
                 &nbsp;<span>{t("title-home")}</span>
@@ -61,7 +61,7 @@ const Navbar = () => {
                 }
                 onClick={toggleMenu}
                 className="nav-link"
-                to="/about"
+                to="/atayee-electric/about"
               >
                 <FontAwesomeIcon icon={faAddressCard} size="sm" />
                 &nbsp;<span>{t("title-about")}</span>
@@ -74,7 +74,7 @@ const Navbar = () => {
                 }
                 onClick={toggleMenu}
                 className="nav-link"
-                to="/services"
+                to="/atayee-electric/services"
               >
                 {/* <FontAwesomeIcon icon={faTools} size="xs"/><span>&nbsp;Services</span>  */}
                 <FontAwesomeIcon icon={faHandHoldingHeart} size="xs" />
@@ -88,7 +88,7 @@ const Navbar = () => {
                 }
                 onClick={toggleMenu}
                 className="nav-link"
-                to="/contact"
+                to="/atayee-electric/contact"
               >
                 <FontAwesomeIcon icon={faAddressBook} size="xs" />
                 <span>&nbsp;{t("title-contact")}</span>

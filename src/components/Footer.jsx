@@ -75,22 +75,22 @@ const FooterMenuAccess = () => {
   return (
     <section id="footer-menu" className="row mt-2 mb-2 pt-4 pb-4">
       <div className="col-md-3 fma">
-        <NavLink to="/" className="footer-nav">
+        <NavLink to="/atayee-electric/" className="footer-nav">
           <FaArrowCircleRight />
           &nbsp; {t("title-home")}
         </NavLink>
         <br />
-        <NavLink to="/about" className="footer-nav">
+        <NavLink to="/atayee-electric/about" className="footer-nav">
           <FaArrowCircleRight />
           &nbsp; {t("title-about")}
         </NavLink>
         <br />
-        <NavLink to="/services" className="footer-nav">
+        <NavLink to="/atayee-electric/services" className="footer-nav">
           <FaArrowCircleRight />
           &nbsp; {t("title-services")}
         </NavLink>
         <br />
-        <NavLink to="/contact" className="footer-nav">
+        <NavLink to="/atayee-electric/contact" className="footer-nav">
           <FaArrowCircleRight />
           &nbsp; {t("title-contact")}
         </NavLink>

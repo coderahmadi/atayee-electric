@@ -8,7 +8,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 // import "./assets/css/index.css";
 import "./assets/scss/custom.scss";
-import "./utils/i18n";
+import "./assets/js/i18n";
 import { Suspense } from "react";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

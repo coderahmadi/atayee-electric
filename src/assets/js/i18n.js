@@ -9,6 +9,9 @@ i18n
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
+        backend: {
+            loadPath: '/atayee-electric/locales/{{lng}}/{{ns}}.json', // Customize the path structure
+        },
         fallbackLng: 'fr',
         debug: true,
         whitelist: languages,

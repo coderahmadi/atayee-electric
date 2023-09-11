@@ -31,7 +31,7 @@ const About = () => {
               style={profile}
             />
             <figcaption className="figure-caption text-end pb-2 pe-3">
-              Photo of ~ <cite>Hamid Atayee</cite>
+              Photo of ~ <cite>{t("name")}</cite>
             </figcaption>
           </figure>
         </div>
@@ -48,7 +48,7 @@ const About = () => {
             </blockquote>
             <br />
             <figcaption className="blockquote-footer fs-5">
-              {t("regard")},&nbsp;<cite title="Source Title">Hamid Atayee</cite>
+              {t("regard")},&nbsp;<cite title="Source Title">{t("name")}</cite>
             </figcaption>
           </figure>
         </div>

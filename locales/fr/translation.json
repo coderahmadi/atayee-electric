@@ -1,10 +1,10 @@
 {
-  "title-home": "Maison",
-  "title-about": "à propos",
+  "title-home": "Accueil",
+  "title-about": "À propos",
   "title-services": "Services",
   "title-contact": "Contact",
   "title-faq": "FAQ",
-  "full-name": "Hamed Hussein ATAYEE",
+  "full-name": "ATAYEE Hamed Hussein",
   "brand-text": "L'électrique d'Atayee",
   "title": "Bienvenue à réagir en utilisant react-i18next",
   "description": {
